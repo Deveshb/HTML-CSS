@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Login</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+</head>
+
+<style>
+.nav {
+  background-color:rgb(145,26,48);
+}
+li a {
+  color:white;
+}
+a:hover{color:white;text-decoration:none}
+input.largerCheckbox
+{
+width: 20px;
+height: 15px;
+margin:10px 0 0 5px;
+}
+
+</style>
+
+<style>
+	input::-webkit-input-placeholder {
+	  	font-size:17px;
+	}
+	p1{
+		font-size: 250%;
+	  	color:rgb(145,26,48); 
+	}
+	p2{
+ 		font-size: 150%;
+	}
+</style>
+
+<body ng-app="userapp">
+
+<div class="nav">
+	<img src="images/icon.jpg" style="float:left">
+	<div style="float:right">
+		<ul class="list-inline" style="float:right;margin-top:15px;">
+			<li><a href="login.html" >Login</a></li>
+			<li><a href="Registration.html">Register</a> </li>
+		</ul>
+	</div>
+</div>
+
+<div ng-view></div>
+
+<div style=" background-color:#d0d0e2 ; bottom:0;position:fixed;width:100%;padding:10px 0 10px 10px">Copyright 2015 <span class="pull-right"><a href="#">About Us &nbsp</a> &nbsp|&nbsp <a href="#">&nbsp Help&nbsp</a> &nbsp| &nbsp<a href="#">&nbsp Developer &nbsp</a> &nbsp  |&nbsp <a href="#">&nbsp Career &nbsp </a> &nbsp|&nbsp  <a href="#">&nbsp Feedback &nbsp</a> &nbsp| &nbsp<a href="#">&nbsp FAQs &nbsp</a></span> </div>
+</body>
+
+</html>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/angular.min.js"></script>
+<script type="text/javascript" src="js/angular-route.min.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="./modules/userapp.js"></script>
+<script type="text/javascript" src="./controller/logincontrol.js"></script>
+
